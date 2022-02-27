@@ -1,0 +1,16 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 2,
+
+    "name": "Pokemon Sword and Shield Countdown Timer",
+    "description": "This is a fan made extension that allows anyone to easly check how soon Pokemon Sword and Shield will be released!",
+    "version": "4.2",
+
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com/; object-src 'self'",
+    
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    }
+}

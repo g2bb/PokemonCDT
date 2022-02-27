@@ -1,0 +1,16 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "Pokemon Let's Go Countdown Timer",
+  "description": "This is a fan made extension that allows anyone to easly check how soon Pokemon Let's Go will be released!",
+  "version": "3.0",
+    
+  "content_security_policy": "script-src 'self' https://platform.twitter.com; object-src 'self'"
+    
+  "browser_action": {
+   "default_icon": "img/icon.png",
+   "default_popup": "popup.html",
+  }
+}

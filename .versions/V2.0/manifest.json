@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pokemon Ultra Sun & Ultra Moon Count Down",
+  "description": "This is a fan made extension that allows anyone to easly check how soon Pokemon Ultra Sun and Pokemon Ultra Moon will be released!",
+  "version": "2.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  }
+}

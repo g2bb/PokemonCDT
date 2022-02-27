@@ -1,0 +1,19 @@
+*{margin:0;padding:0;}
+body{
+    background: url('PokemonBG.jpg');
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+.cdtcover{
+    position: absolute;
+    width: 455px;
+    height: 75px;
+    margin: auto 0;
+    display: inline-block;
+}
+.cdtcover a{
+    display: block;
+    width: 455px;
+    height: 75px;
+}

@@ -1,0 +1,41 @@
+*{margin:0;padding:0;}
+body{
+    background: url('img/Bg.jpg');
+    background-size: cover;
+    text-align: center;
+    width: 600px;
+    height: 375px;
+    font-family: 'Roboto', sans-serif;
+}
+.TimeBg{
+    background: rgba(0,0,0,.75);
+    width: 600px;
+    height: 75px;
+}
+div,iframe{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.cdtcover{
+    position: absolute;
+    width: 600px;
+    height: 75px;
+    margin: auto 0;
+    display: inline-block;
+    background: transparent;
+    z-index: 10
+}
+.cdtcover a{
+    display: block;
+    width: 600px;
+    height: 75px;
+    background: transparent;
+}
+#CDT{
+    left: 10px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.75;
+}

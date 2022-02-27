@@ -1,5 +1,9 @@
+//Set Badge color
+chrome.action.setBadgeBackgroundColor({color: "#8F00FF"});
+
 // Set vars
 var CDT, CUT, distance;
+var BadgeCDT;
 
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 18, 2022 00:00:00").getTime();
@@ -35,11 +39,16 @@ setInterval(function() {
         }
     }
 
+    //Fetch Settings
+    chrome.storage.local.get("BadgeCDTSetting", function(result) {
+        BadgeCDT = result.BadgeCDTSetting;
+    });
+
     // Display the result in the banner text
-    if (distance > 0) {
-        console.log("D/P");
+    if (distance > 0 && BadgeCDT) {
         chrome.action.setBadgeText({text: badgeDay + "D"});
-        chrome.action.setBadgeBackgroundColor({color: "#8F00FF"});
+    } else {
+        chrome.action.setBadgeText({text: ""});
     }
 
 }, 1000);

@@ -6,9 +6,9 @@ This is a simple countdown timer for the release date of the newest installation
 ![Screenshot of settting page](/img/screenshotSettings1280.jpg)
 
 **CHANGE LOG**  
-Version 6.0  
-This is one of my biggest updates yet!  
+Version 6.0 *This is one of my biggest updates yet!*
 - Pokemon Scarlet and Violet Support
+    - Used an estimated release date of November 18th 2022 based on recent releases
 - Added Settings menu
 - Added RSS Feed
 - Added setting to toggle the icon badge countdown

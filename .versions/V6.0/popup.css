@@ -1,0 +1,122 @@
+*{margin:0;padding:0;}
+
+body{
+    background: url('img/Bg.jpg');
+    background-size: cover;
+    text-align: center;
+    width: 480px;
+    height: 300px;
+}
+
+.TimeBg{
+    /*background: rgba(0,0,0,.75);*/
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    padding-top: 20px;
+    width: 480px;
+    height: 85px;
+}
+
+.noRss{
+    height: 60px !important;
+}
+
+div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.cdtcover{
+    position: absolute;
+    width: 600px;
+    height: 85px;
+    margin: auto 0;
+    display: inline-block;
+    background: transparent;
+    z-index: 10;
+}
+
+.cdtcover a{
+    display: block;
+    width: 600px;
+    height: 85px;
+    background: transparent;
+}
+
+#CDT{
+    left: 10px;
+    color: #FFF;
+    font-size: 1.35em;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.marqueeWrapper{
+    width: 100%;
+}
+
+#marquee {
+    color: #fff;
+    letter-spacing: 0.2pt;
+    font-weight: 700;
+    margin: 5px 5px 5px 8px;
+    height: 20px;
+    width: 435px;
+    font-size: 12px;
+}
+
+#settingsBtn{
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#SettingsMenu{
+    width: 380px;
+    height: 200px;
+    margin: 25px;
+    padding: 25px;
+    background: rgba(255,255,255,.75);
+    text-align: left;
+    border-radius: 7.5px;
+    line-height: 2.5em;
+    font-size: 1.25em;
+    backdrop-filter: blur(5px);
+    transition: all 0.4s;
+    opacity: 100%;
+    top: 0px;
+    transform: scale(1);
+}
+
+.hidden{
+    transition: all 0.4s !important;
+    transform: scale(0.7) !important;
+    top: 480px !important;
+    opacity: 100% !important;
+}
+
+#SettingsCloseBtn{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#SettingsMenu > h1{
+    width: 100%;
+    border-bottom: solid 2px #000;
+}
+
+.checkbox{
+    border: none;
+    margin: 5px;
+    transform: scale(1.25)
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Scarlet and Violet Countdown Timer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+    <script src="background.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div class="TimeBG" id="TimeBG">
+        <div class="cdtcover">
+            <a href="https://scarletviolet.pokemon.com/" target="_blank"></a>
+        </div>
+        <p Id="CDT">Loading...</p>
+        <div class="marqueeWrapper">
+            <div id="marquee"></div>
+            <button type="button" name="settings" id="settingsBtn" title="Settings">⚙️</button>
+        </div>
+    </div>
+    <div class="hidden" id="SettingsMenu">
+        <p id="SettingsCloseBtn">&#10005;</p>
+        <h1>Settings</h1>
+        <input type="checkbox" name="badge" id="BadgeChkBx" class="checkbox" checked>
+        <label for="badge">Enable Countdown on Icon</label><br>
+        <input type="checkbox" name="badge" id="RssChkBx" class="checkbox" checked>
+        <label for="badge">Enable Pokemon RSS Feed</label>
+    </div>
+</body>
+<script src="rss-marquee.js"></script>
+</html>

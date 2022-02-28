@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     new RSSMarquee(feedUrl, elementSelector, {
         speed: 110,
-        maxItems: 5
+        maxItems: 5,
+        order: 'reverse'
     });
 });

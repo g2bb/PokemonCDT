@@ -12,8 +12,12 @@ class RSSMarquee {
      * @param {number} options.speed duration in ms per character. Bigger values = slow speed
      * @param {number} options.maxItems specify max number of titles to show (useful to debug)
      * @param {object} options.hostnameSelector The selector of the element where you want to show the URL of the news feed source (usefull for copyright atttribution)
+     * @param {string} options.order The order you want to display the feed in.
      */
-    constructor(feedURLs, elementContainer, options = { speed: 110, maxItems: null, hostnameSelector: null }) {
+
+
+
+     constructor(feedURLs, elementContainer, options = { speed: 110, maxItems: null, hostnameSelector: null, order: null}) {
         this._feedURLs = new Array();
 
         if (Array.isArray(feedURLs)) {
@@ -47,6 +51,7 @@ class RSSMarquee {
             speed: this.validateSpeed(options.speed),
             maxItems: options.maxItems,
             hostnameSelector: options.hostnameSelector,
+            order: options.order
             // ...options
         };
 
@@ -254,6 +259,7 @@ class RSSMarquee {
      * - remove html tags
      *
      * @param {string} xmlText
+     * @param {string} order
      * @returns {string} parsed feed
      */
     parseXMLFeed(xmlText) {
@@ -261,18 +267,21 @@ class RSSMarquee {
             const parser = new DOMParser();
             const doc = parser.parseFromString(xmlText, "text/xml");
 
-            var nodes = doc.getElementsByTagName("item");
-            var newDoc = parser.parseFromString("<CATALOG></CATALOG>","text/xml");
-            var catalog = newDoc.childNodes[0];
-            for (var i = nodes.length - 1; i >= 0; --i) {
-                catalog.appendChild(nodes[i]);
+            var dirDoc = doc;
+            if(this._options.order == "reverse"){
+                var nodes = doc.getElementsByTagName("item");
+                var revDoc = parser.parseFromString("<CATALOG></CATALOG>","text/xml");
+                var catalog = revDoc.childNodes[0];
+                for (var i = nodes.length - 1; i >= 0; --i) {
+                    catalog.appendChild(nodes[i]);
+                };
+                dirDoc = revDoc;
             }
-            console.log(newDoc);
 
             let news = '';
             let totals = 0;
 
-            for (let item of newDoc.querySelectorAll('item')) {
+            for (let item of dirDoc.querySelectorAll('item')) {
                 let title = item.getElementsByTagName("title")[0].childNodes[0].nodeValue;
                 // let description = item.getElementsByTagName("description")[0].childNodes[0].nodeValue;
 

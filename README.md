@@ -5,9 +5,9 @@ This is a simple countdown timer for the release date of the newest installation
 ![Screenshot of main app](/img/screenshot1280.jpg)
 ![Screenshot of settting page](/img/screenshotSettings1280.jpg)
 
-*CHANGE LOG*
-Version 6.0
-This is one of my biggest updates yet!
+**CHANGE LOG**  
+Version 6.0  
+This is one of my biggest updates yet!  
 - Pokemon Scarlet and Violet Support
 - Added Settings menu
 - Added RSS Feed

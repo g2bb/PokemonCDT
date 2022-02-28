@@ -2,10 +2,12 @@
 ![HeroImage](/img/Bg.jpg)
 This is a simple countdown timer for the release date of the newest installation in the Pokemon franchise. The extension uses your systems clock so it is always accurate to your region.
 
+You can install the extension on the [Google Chrome Web Store](https://chrome.google.com/webstore/detail/pokemon-countdown-timer/ihceabbceaenalnjjnclodbheifiocai)
+
 ![Screenshot of main app](/img/screenshot1280.jpg)
 ![Screenshot of settting page](/img/screenshotSettings1280.jpg)
 
-**CHANGE LOG**  
+##CHANGE LOG  
 Version 6.0 *This is one of my biggest updates yet!*
 - Pokemon Scarlet and Violet Support
     - Used an estimated release date of November 18th 2022 based on recent releases

@@ -7,7 +7,7 @@ You can install the extension on the [Google Chrome Web Store](https://chrome.go
 ![Screenshot of main app](/img/screenshot1280.jpg)
 ![Screenshot of settting page](/img/screenshotSettings1280.jpg)
 
-##CHANGE LOG  
+## CHANGE LOG  
 Version 7.0
 - Pokemon Legends: Z-A Support
 - Removed RSS feed (All the Pokemon RSS Feeds shut down ☹️)

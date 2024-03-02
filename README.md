@@ -8,6 +8,10 @@ You can install the extension on the [Google Chrome Web Store](https://chrome.go
 ![Screenshot of settting page](/img/screenshotSettings1280.jpg)
 
 ##CHANGE LOG  
+Version 7.0
+- Pokemon Legends: Z-A Support
+- Removed RSS feed (All the Pokemon RSS Feeds shut down ☹️)
+
 Version 6.0 *This is one of my biggest updates yet!*
 - Pokemon Scarlet and Violet Support
     - Used an estimated release date of November 18th 2022 based on recent releases

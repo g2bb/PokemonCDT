@@ -1,8 +1,8 @@
 setInterval(function() {
-    document.getElementById("CDT").innerHTML = "Pokémon Legends: Z-A will be available in</br>" + CDT.days + " Days " + CDT.hours + " Hrs " + CDT.minutes + " Mins " + CDT.seconds + " Secs";
+    document.getElementById("CDT").innerHTML = "Pokémon Winds and Waves will be available in</br>" + CDT.days + " Days " + CDT.hours + " Hrs " + CDT.minutes + " Mins " + CDT.seconds + " Secs";
 
     if (distance < 0) {
-        document.getElementById("CDT").innerHTML = "Pokémon Legends: Z-A has been available for</br>" + CUT.days + " Days " + CUT.hours + " Hrs " + CUT.minutes + " Mins " + CUT.seconds + " Secs";
+        document.getElementById("CDT").innerHTML = "Pokémon Winds and Waves has been available for</br>" + CUT.days + " Days " + CUT.hours + " Hrs " + CUT.minutes + " Mins " + CUT.seconds + " Secs";
     }
 }, 1000);
 
